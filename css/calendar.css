@@ -1,0 +1,38 @@
+
+body{
+	font-size: 14px;
+	font-family: 'Major Mono Display', monospace;
+}
+.table-bordered{
+	border: 1px solid #000 !important
+}
+.table thead th{
+	border: 1px solid #000 !important;
+}
+.table-bordered td{
+	border: 1px solid #000 !important;
+}
+.card-header{
+	background: #000 !important;
+	color: #fff;
+}
+.event-input{
+	border: 1px solid #000;
+	display: none;
+}
+#event_btn{
+	background: #000;
+	color: #fff;
+	border: none;
+	border-radius: 0px;
+
+}
+.todays-date{
+	background: #000;
+	color:#fff;
+}
+.events{
+	border: 1px solid black;
+	min-height: 100%;
+	padding: 10px;
+}

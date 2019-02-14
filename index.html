@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+	<head>
+		<meta charset="utf-8">
+		<title>Calendar App</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/calendar.css">
+	</head>
+	<body>
+		<h1 class="text-center">My Calendar App</h1>
+
+	    <div class="container border">
+	    	<div class="row">
+	    		<div class="col-md-7 col-lg-7 p-3">
+		    		<div class="card border-0">
+				        <h3 class="card-header" id="month_year"></h3>
+				        <table class="table table-bordered table-responsive-sm" id="calendar">
+				            <thead>
+				            <tr>
+				                <th>Sun</th>
+				                <th>Mon</th>
+				                <th>Tue</th>
+				                <th>Wed</th>
+				                <th>Thu</th>
+				                <th>Fri</th>
+				                <th>Sat</th>
+				            </tr>
+				            </thead>
+
+				            <tbody id="calendar-body">
+
+				            </tbody>
+				        </table>
+				    </div>
+		    	</div>
+		    	<div class="col-md-5 col-lg-5 p-3">
+		    		<div class="events">
+		    			<div class="card-header">
+		    				<h3 class="text-center text-white">My Events</h3>
+		    			</div>
+		    			
+		    			<table class="table table-bordered table-editable">
+		    				<thead>
+		    					<tr>
+		    						<th>Date</th>
+		    						<th>Appointments</th>
+		    						<th>Actions</th>
+		    					</tr>
+		    				</thead>
+		    				<tbody id="show_events">
+		    				
+		    				</tbody>
+		    			</table>
+		    		</div>
+		    	</div>
+	    	</div>
+	    	
+		    
+		    <div class="row justify-content-center">
+		    	<div class="col-md-10">
+		    		<div class="event-input mt-5 px-3 py-4" id="event_input">
+		    			<label class="font-weight-bold">Enter Appointment details for <span id="event_date"></span></label>
+		    			<br>
+		    			<input class="form-control" placeholder="Meeting with Jon Snow" id="event_form" />
+		    			<button type="submit" id="event_btn" class="btn btn-md btn-block mt-3 ">Submit</button>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+		        
+        
+        
+        
+
+		<script src="https://cdn.jsdelivr.net/npm/moment@2.18.1/min/moment.min.js"></script>
+
+		<script src="js/calendar.js"></script>
+	</body>
+</html>
